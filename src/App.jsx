@@ -5,6 +5,10 @@ import { Evenement } from './Pages/Evenement'
 import { Achat } from './Pages/Achat'
 import { Paiement } from './Pages/Paiement'
 import { Confirmation } from './Pages/Confirmation'
+import Signup from './Pages/Signup'
+import Signout from './Pages/Signout'
+import Profile from './Pages/Profile'
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -25,6 +29,18 @@ const router = createBrowserRouter([
   {
     path: '/paiement',
     element: <Paiement />,
+  },
+  {
+    path: '/signup',
+    element: <Signup />,
+  },
+  {
+    path: '/signout',
+    element: <Signout />,
+  },
+  {
+    path: '/profile',
+    element: <Profile />,
   },
 ])
 
