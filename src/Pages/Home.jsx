@@ -1,5 +1,5 @@
 import React from 'react'
 
 export const Home = () => {
-  return <div>Hello from Home Page</div>
+  return <div>Bienvenue sur notre site de Ticketing</div>
 }

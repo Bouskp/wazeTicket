@@ -1,7 +1,8 @@
-import Achat from './Achat'
-import { Confirmation } from './Confirmation'
 import { Evenement } from './Evenement'
+import { Wrapper } from './Wrapper'
+import ErrorPage from './ErrorPage'
 import { Home } from './Home'
-import { Paiement } from './Paiement'
+import Login from './Login'
+import Register from './Register'
 
-export default { Achat, Confirmation, Evenement, Home, Paiement }
+export { Evenement, Wrapper, ErrorPage, Home, Login, Register }
