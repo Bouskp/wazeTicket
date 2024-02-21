@@ -2,6 +2,8 @@ import React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Home, ErrorPage, Evenement, Wrapper, Login, Register } from './Pages'
 
+import './index.css'
+
 const router = createBrowserRouter([
   {
     path: '/',
