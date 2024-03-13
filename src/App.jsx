@@ -1,7 +1,7 @@
 import React from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Home, ErrorPage, Evenement, Wrapper, Login, Register } from './Pages'
-
+import Modals from '../components/Modals'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -20,11 +20,19 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <Login />,
+        element: (
+          <Modals>
+            <Login />
+          </Modals>
+        ),
       },
       {
         path: '/register',
-        element: <Register />,
+        element: (
+          <Modals>
+            <Register />
+          </Modals>
+        ),
       },
     ],
   },

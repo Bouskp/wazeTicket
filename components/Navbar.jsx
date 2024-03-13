@@ -118,7 +118,9 @@ export const Navbar = () => {
               <Button to='/evenement'>
                 <Link>Creer un evenement</Link>
               </Button>
-              <Button>Se connecter</Button>
+              <Button>
+                <Link to='/register'>Se connecter</Link>
+              </Button>
             </ul>
           </NavItems>
         </Nav>

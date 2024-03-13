@@ -4,6 +4,8 @@ import axios from 'axios'
 import styled from 'styled-components'
 import { MdOutlineMail } from 'react-icons/md'
 import { RiLockPasswordFill } from 'react-icons/ri'
+import { Button } from './Wrapper'
+import { Link } from 'react-router-dom'
 
 export const FormContainer = styled.form`
   padding: 1rem 1.5rem;
@@ -16,6 +18,7 @@ export const FormContainer = styled.form`
   & > .title {
     font-size: 2.5rem;
     color: ${({ theme }) => theme.first};
+    text-decoration: underline;
   }
 `
 const InputContainer = styled.div`
@@ -40,6 +43,18 @@ const Input = styled.input`
   background: none;
   color: ${({ theme }) => theme.first};
   font-size: 1.3rem;
+`
+const FootContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  & .link {
+    color: ${({ theme }) => theme.first};
+    text-decoration: underline;
+  }
 `
 
 function Login() {
@@ -76,7 +91,17 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
         />
       </InputContainer>
-      <input type='submit' value='connecter vous' />
+      <FootContainer>
+        <Button type='submit' value='connecter vous'>
+          Connectez-vous
+        </Button>
+        <p>
+          Vous n'avez pas de compte ?
+          <Link to='/register' className='link'>
+            creer un compte
+          </Link>
+        </p>
+      </FootContainer>
     </FormContainer>
   )
 }
