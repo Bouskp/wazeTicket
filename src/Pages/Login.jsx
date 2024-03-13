@@ -45,7 +45,7 @@ const Input = styled.input`
 function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const { register, handleSubmit } = useForm()
+  const { handleSubmit } = useForm()
 
   const onSubmit = async (e) => {
     e.preventDefault()
